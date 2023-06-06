@@ -1,45 +1,50 @@
 <html lang="en">
-    <form [formGroup]="form" (ngSubmit)="submitForm()">
-      <div>
-        <label for="firstName">First Name</label>
-        <input type="text" id="firstName" formControlName="firstName" required>
-        <div *ngIf="form.controls['firstName'].invalid && form.controls['firstName'].touched" class="error">
-          First Name is required.
-        </div>
-      </div>
+  <p>
+    <mat-toolbar>
+      <span style="padding: 2%;">Shashwat Utkarsh Form</span>
+    </mat-toolbar>
+  </p>
+    <form [formGroup]="form" (ngSubmit)="submitForm()" style="align-content: center;">
+      <p>
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>First Name</mat-label>
+          <input matInput formControlName="firstName">
+          <mat-icon matSuffix>home</mat-icon>
+        </mat-form-field> &nbsp;
+      </p>
+      
+      <p>
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>Last Name</mat-label>
+          <input matInput formControlName="lastName">
+          <mat-icon matSuffix>home</mat-icon>
+        </mat-form-field> &nbsp;
+      </p>
 
-      <div>
-        <label for="lastName">Last Name</label>
-        <input type="text" id="lastName" formControlName="lastName" required>
-        <div *ngIf="form.controls['lastName'].invalid && form.controls['lastName'].touched" class="error">
-          Last Name is required.
-        </div>
-      </div>
+      <p>
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>Address</mat-label>
+          <input matInput formControlName="address">
+          <mat-icon matSuffix>home</mat-icon>
+        </mat-form-field> &nbsp;
+      </p>
 
-      <div>
-        <label for="address">Address</label>
-        <input type="text" id="address" formControlName="address" required>
-        <div *ngIf="form.controls['address'].invalid && form.controls['address'].touched" class="error">
-          Address is required.
-        </div>
-      </div>
-    
-      <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" formControlName="email" required>
-        <div *ngIf="form.controls['email'].invalid && form.controls['email'].touched" class="error">
-          Email is required and must be a valid email address.
-        </div>
-      </div>
-    
-      <div>
-        <label for="phoneNo">Phone No.</label>
-        <input type="text" id="phoneNo" formControlName="phoneNo" required>
-        <div *ngIf="form.controls['phoneNo'].invalid && form.controls['phoneNo'].touched" class="error">
-          Address is required.
-        </div>
-      </div>
-    
+      <p>
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>Phone No.</mat-label>
+          <input matInput formControlName="phoneNo">
+          <mat-icon matSuffix>home</mat-icon>
+        </mat-form-field> &nbsp;
+      </p>
+      
+      <p>
+        <mat-form-field appearance="outline" class="form-field">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email">
+          <mat-icon matSuffix>home</mat-icon>
+        </mat-form-field> &nbsp;
+      </p>
+      
       <button type="submit" [disabled]="form.invalid">Submit</button>
     </form>
 </html>

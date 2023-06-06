@@ -1,6 +1,8 @@
 import { Component, OnInit} from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MailService } from './services/mail.service';
+import {MatToolbarModule} from '@angular/material/toolbar';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
