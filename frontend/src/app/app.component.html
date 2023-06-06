@@ -1,10 +1,26 @@
 <html lang="en">
     <form [formGroup]="form" (ngSubmit)="submitForm()">
       <div>
-        <label for="name">Name</label>
-        <input type="text" id="name" formControlName="name" required>
-        <div *ngIf="form.controls['name'].invalid && form.controls['name'].touched" class="error">
-          Name is required.
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" formControlName="firstName" required>
+        <div *ngIf="form.controls['firstName'].invalid && form.controls['firstName'].touched" class="error">
+          First Name is required.
+        </div>
+      </div>
+
+      <div>
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" formControlName="lastName" required>
+        <div *ngIf="form.controls['lastName'].invalid && form.controls['lastName'].touched" class="error">
+          Last Name is required.
+        </div>
+      </div>
+
+      <div>
+        <label for="address">Address</label>
+        <input type="text" id="address" formControlName="address" required>
+        <div *ngIf="form.controls['address'].invalid && form.controls['address'].touched" class="error">
+          Address is required.
         </div>
       </div>
     
@@ -17,10 +33,10 @@
       </div>
     
       <div>
-        <label for="message">Message</label>
-        <textarea id="message" formControlName="message" required></textarea>
-        <div *ngIf="form.controls['message'].invalid && form.controls['message'].touched" class="error">
-          Message is required.
+        <label for="phoneNo">Phone No.</label>
+        <input type="text" id="phoneNo" formControlName="phoneNo" required>
+        <div *ngIf="form.controls['phoneNo'].invalid && form.controls['phoneNo'].touched" class="error">
+          Address is required.
         </div>
       </div>
     
