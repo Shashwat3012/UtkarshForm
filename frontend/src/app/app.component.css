@@ -1,3 +1,18 @@
 .form-field{
     width: 40%;
+    padding-left: 30%;
+}
+
+.example-button-row {
+    display: table-cell;
+    max-width: 600px;
+    margin-left: 45%;
+    background-color: brown;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid rgb(219, 209, 23);
+    padding: 10px;
 }

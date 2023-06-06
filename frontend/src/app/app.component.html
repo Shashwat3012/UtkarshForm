@@ -1,15 +1,21 @@
 <html lang="en">
   <p>
     <mat-toolbar>
-      <span style="padding: 2%;">Shashwat Utkarsh Form</span>
+      <span style="margin: auto;
+      width: 50%;
+      border: 3px solid rgb(79, 67, 235);
+      padding: 10px;
+      text-align: center;"
+
+      >Shashwat Utkarsh Form</span>
     </mat-toolbar>
   </p>
-    <form [formGroup]="form" (ngSubmit)="submitForm()" style="align-content: center;">
+    <form [formGroup]="form" (ngSubmit)="submitForm()" class="center">
       <p>
         <mat-form-field appearance="outline" class="form-field">
           <mat-label>First Name</mat-label>
           <input matInput formControlName="firstName">
-          <mat-icon matSuffix>home</mat-icon>
+          <mat-icon matSuffix>person</mat-icon>
         </mat-form-field> &nbsp;
       </p>
       
@@ -17,7 +23,7 @@
         <mat-form-field appearance="outline" class="form-field">
           <mat-label>Last Name</mat-label>
           <input matInput formControlName="lastName">
-          <mat-icon matSuffix>home</mat-icon>
+          <mat-icon matSuffix>person</mat-icon>
         </mat-form-field> &nbsp;
       </p>
 
@@ -33,7 +39,7 @@
         <mat-form-field appearance="outline" class="form-field">
           <mat-label>Phone No.</mat-label>
           <input matInput formControlName="phoneNo">
-          <mat-icon matSuffix>home</mat-icon>
+          <mat-icon matSuffix>phone</mat-icon>
         </mat-form-field> &nbsp;
       </p>
       
@@ -41,11 +47,14 @@
         <mat-form-field appearance="outline" class="form-field">
           <mat-label>Email</mat-label>
           <input matInput formControlName="email">
-          <mat-icon matSuffix>home</mat-icon>
+          <mat-icon matSuffix>email</mat-icon>
         </mat-form-field> &nbsp;
       </p>
       
-      <button type="submit" [disabled]="form.invalid">Submit</button>
+      <div>
+        <button class="example-button-row"mat-raised-button color="primary" type="submit" [disabled]="form.invalid">Submit</button>
+      </div>
+
     </form>
 </html>
 
