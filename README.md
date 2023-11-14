@@ -12,7 +12,7 @@ Backend: SpringBoot
 ## YouTube Video of Working
 
 [<img src="https://img.youtube.com/vi/RklzBIxPsaI/hqdefault.jpg" width="600" height="300"
-/>](https://www.youtube.com/embed/RklzBIxPsaI)
+/>](https://youtu.be/RklzBIxPsaI)
 
 ## Documentation
 
